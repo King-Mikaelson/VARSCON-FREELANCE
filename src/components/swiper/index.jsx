@@ -22,7 +22,7 @@ function Carousel() {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className="mt-24 px-4 lg:px-48">
+    <div className=" my-8 px-4 lg:px-48">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
