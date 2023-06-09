@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Painter from "../../../public/Painter.png";
-import Science from "../../../public/Science.png";
+import Science4 from "../../../public/Science4.png";
 import BusinessPlan from "../../../public/BusinessPlan.png";
 import aws from "../../../public/aws.png";
 import goggle from "../../../public/goggle.png";
@@ -55,7 +55,7 @@ function Portofolio() {
             </p>
           </div>
           <div className="bg-[#FFFFFF] py-1 md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={Painter} alt="Painter" className="" />
+            <Image src={Science4} alt="Painter" className="w-[17rem] h-[17rem]" />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Engineering
             </p>

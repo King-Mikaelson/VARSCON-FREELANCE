@@ -52,18 +52,18 @@ function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
+          <div className="relative h-full flex justify-between items-center  px-4">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">
                 BRAND IDENTITY
               </p>
-              <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
+              <p className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
                 How we crafted a unique identity for the renowned affliate
                 marketer
               </p>
               <div className="flex  lg:py-4 py-2">
                 <button className="flex  bg-[#00C664] rounded-lg  lg:py-4 py-3 px-6 items-center">
-                  <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
+                  <p className="font-DMSans font-medium  text-[#005F56] text-sm text-center ">
                     Read Case Study
                   </p>
                 </button>
@@ -75,18 +75,18 @@ function Carousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-14 px-3">
+          <div className="h-full flex justify-between items-center  px-3">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">
                 BRAND IDENTITY
               </p>
-              <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
+              <p className="leading-[10rem] text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
                 How we crafted a unique identity for the renowned affliate
                 marketer
               </p>
               <div className="flex  lg:py-4 py-2">
                 <button className="flex  bg-[#00C664] rounded-lg lg:py-4 py-3 px-6 items-center">
-                  <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
+                  <p className="font-DMSans font-medium  text-[#005F56] text-sm text-center ">
                     Read Case Study
                   </p>
                 </button>
