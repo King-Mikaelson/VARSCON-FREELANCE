@@ -3,6 +3,7 @@ import Cta from '@/components/cta';
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import Portofolio from '@/components/portofolio';
+import Carousel from '@/components/swiper';
 import Head from 'next/head';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
      </Head>
       <NavBar/>
       <Hero/>
+      <Carousel/>
       <Portofolio/>
       <Cta/>
       <Footer/>
