@@ -39,10 +39,10 @@ function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-12 px-4">
+          <div className="h-full flex justify-between items-center lg:px-12 px-3">
             <div className="flex flex-col gap-6 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
-            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-2xl">How we crafted a unique identity for the renowned affliate marketer</p>
+            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
             <div className="flex  py-4">
         <button className="flex  bg-[#00C664] rounded-lg py-4 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
@@ -57,10 +57,10 @@ function Carousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-12 px-4">
+          <div className="h-full flex justify-between items-center lg:px-12 px-3">
             <div className="flex flex-col gap-6 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
-            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-2xl">How we crafted a unique identity for the renowned affliate marketer</p>
+            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
             <div className="flex  py-4">
         <button className="flex  bg-[#00C664] rounded-lg py-4 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
