@@ -43,8 +43,8 @@ function Carousel() {
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
             <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
-            <div className="flex  py-4">
-        <button className="flex  bg-[#00C664] rounded-lg py-4 px-6 items-center">
+            <div className="flex  lg:py-4 py-2">
+        <button className="flex  bg-[#00C664] rounded-lg  lg:py-4 py-2 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
           Read Case Study
           </p>
@@ -61,8 +61,8 @@ function Carousel() {
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
             <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
-            <div className="flex  py-4">
-        <button className="flex  bg-[#00C664] rounded-lg py-4 px-6 items-center">
+        <div className="flex  lg:py-4 py-2">
+        <button className="flex  bg-[#00C664] rounded-lg lg:py-4 py-2 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
           Read Case Study
           </p>
