@@ -21,7 +21,7 @@ function NavBar() {
   ];
   const [open, setOpen] = useState(false);
   return (
-    <nav className=" w-full fixed top-0 left-0 z-10">
+    <nav className=" w-full fixed top-0 left-0 z-30">
       <div className="md:flex flex items-center  justify-between bg-[#005F56] py-4 px-4  lg:px-48 w-full  relative">
         <Bars3Icon
           onClick={() => setOpen((prevValue) => !prevValue)}
@@ -41,8 +41,8 @@ function NavBar() {
               <Link
                 className={
                   link.name === "Home"
-                    ? "text-[#FFFFFF] text-sm font-DM Sans font-semibold hover:underline hover:underline-offset-8"
-                    : "text-[#869AB8] text-sm font-DM Sans font-normal hover:underline hover:underline-offset-8"
+                    ? "text-[#FFFFFF] text-sm font-DMSans font-semibold hover:underline hover:underline-offset-8"
+                    : "text-[#869AB8] text-sm font-DMSans font-normal hover:underline hover:underline-offset-8"
                 }
                 href={link.href}
               >
@@ -77,7 +77,7 @@ function NavBar() {
                   onClick={() => {
                     setOpen((prevValue) => !prevValue);
                   }}
-                  className=" hover:underline hover:underline-offset-8 font-DM Sans font-normal"
+                  className=" hover:underline hover:underline-offset-8 font-DMSans font-normal"
                   href={link.href}
                 >
                   {link.name}

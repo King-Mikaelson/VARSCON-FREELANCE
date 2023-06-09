@@ -1,4 +1,5 @@
 import NavBar from '@/components/NavBar';
+import Cta from '@/components/cta';
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import Portofolio from '@/components/portofolio';
@@ -20,6 +21,7 @@ export default function Home() {
       <NavBar/>
       <Hero/>
       <Portofolio/>
+      <Cta/>
       <Footer/>
     </main>
   )

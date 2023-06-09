@@ -9,7 +9,7 @@ import {BiLogoFacebookSquare} from "react-icons/bi";
 
 function Footer() {
   return (
-    <main className="mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20  lg:px-36 px-4 mx-0 w-full self-end lg:pb-20">
+    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20  lg:px-36 px-4 mx-0 w-full self-end lg:pb-48">
     
 
       <div className="flex flex-col lg:flex-row md:justify-between lg:items-center gap-5">
