@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, BsArrowLeftShort} from "react-icons/bs";
 import Image from "next/image";
 import phone from "../../../public/phone.png";
-
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 // Import Swiper styles
 import "swiper/css";
@@ -21,28 +21,31 @@ function Carousel() {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+
+  const swiperRef = useRef();
   return (
-    <div className="my-8 px-4 lg:px-48">
+    <div className="my-8 px-4 lg:px-48 relative">
+       <button className="lg:py-3 lg:px-3 py-1 px-1 shadow-lg absolute lg:left-[8rem] z-10 left-0 top-1/2 border-[#D9D9D9] rounded-full border-[0.5px] border-solid " onClick={() => swiperRef.current?.slidePrev()}>< BsArrowLeftShort color="#869AB8" size={25}/></button>        
+        <button className="lg:py-3 lg:px-3 py-1 px-1  shadow-lg absolute lg:right-[8rem] z-10 right-0 top-1/2  border-[#D9D9D9] rounded-full border-[0.5px] border-solid " onClick={() => swiperRef.current?.slideNext()}><BsArrowRightShort  color="#869AB8" size={25}/></button> 
       <Swiper
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper;
+        }}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-12 px-3">
+          <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
-            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
+            <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
             <div className="flex  lg:py-4 py-2">
         <button className="flex  bg-[#00C664] rounded-lg  lg:py-4 py-3 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
@@ -57,10 +60,10 @@ function Carousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-12 px-3">
+          <div className="h-full flex justify-between items-center lg:px-14 px-3">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
-            <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
+            <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">How we crafted a unique identity for the renowned affliate marketer</p>
         <div className="flex  lg:py-4 py-2">
         <button className="flex  bg-[#00C664] rounded-lg lg:py-4 py-3 px-6 items-center">
           <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
