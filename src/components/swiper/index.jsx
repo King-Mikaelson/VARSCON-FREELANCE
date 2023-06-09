@@ -22,7 +22,7 @@ function Carousel() {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className=" my-8 px-4 lg:px-48">
+    <div className="my-8 px-4 lg:px-48">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -39,7 +39,7 @@ function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center px-12">
+          <div className="h-full flex justify-between items-center lg:px-12">
             <div className="flex flex-col gap-6 w-1/2">
             <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">BRAND IDENTITY</p>
             <p className="text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-2xl">How we crafted a unique identity for the renowned affliate marketer</p>
