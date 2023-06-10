@@ -36,9 +36,9 @@ function Cta() {
       </div>
 
       <div className="flex justify-center pt-12 lg:pt-32 h-full relative lg:px-48 px-4">
-        <div className="md:grid grid-cols-2  left-0   relative flex flex-col items-center h-full md:shadow-lg">
+        <div className="md:grid grid-cols-2  left-0   relative flex flex-col items-center h-full shadow-lg">
           <div className="absolute z-10 bottom-[-28rem] bg-[url(/Vector.png)] h-[40rem] w-full bg-center bg-cover bg-no-repeat"></div>
-            <div className="md:relative px-4 lg:px-8 flex gap-5 flex-col order-2 md:order-1">
+            <div className="md:relative px-4 lg:px-8 flex gap-5 flex-col order-2 md:order-1 py-6 md:py-0">
               <h3 className="text-[#869AB8] font-DMSans font-normal text-sm">
                 TRUE STORY
               </h3>
@@ -57,7 +57,7 @@ function Cta() {
           <Image
             src={testominal}
             alt="testominal"
-            className="h-full w-full rounded-r-lg order-1 md:order-2"
+            className="h-full w-full rounded-r-lg rounded-l-lg md:rounded-l-none   order-1 md:order-2"
           />
         </div>
       </div>

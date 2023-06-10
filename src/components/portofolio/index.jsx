@@ -38,8 +38,8 @@ function Portofolio() {
         </div>
 
         <div className="lg:mt-[-20rem] lg:grid grid-cols-3 flex flex-col lg:flex-row gap-5 px-4  lg:px-48 z-100 relative">
-          <div className="bg-[#FFFFFF] py-1 md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={Painter} alt="Painter" className="" />
+          <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={Painter} alt="Painter" className=""  priority={true}/>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Product Design
             </p>
@@ -54,8 +54,8 @@ function Portofolio() {
               Branding & Brand Identity
             </p>
           </div>
-          <div className="bg-[#FFFFFF] py-1 md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={Science4} alt="Painter" className="xl:w-[17rem] xl:h-[17rem] w-[9.5rem] h-[9.5rem]" />
+          <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={Science4} alt="Painter" className="xl:w-[17rem] xl:h-[17rem] w-[9.5rem] h-[9.5rem]"  priority={true}/>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Engineering
             </p>
@@ -72,8 +72,8 @@ function Portofolio() {
               AI & Machine Learning
             </p>
           </div>
-          <div className="bg-[#FFFFFF] py-1  md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={BusinessPlan} alt="Painter" className="" />
+          <div className="bg-[#FFFFFF] py-1 pb-8  md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={BusinessPlan} alt="Painter" className=""  priority={true}/>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Big Data Analysis
             </p>
@@ -105,11 +105,11 @@ function Portofolio() {
             </div>
           </div>
         </div>
-        <div className="flex  items-center flex-col md:flex-row  justify-between  mx-4  lg:mx-48 xl:gap-14 lg:gap-1 gap-10 pb-14">
-          <Image src={aws} alt="marketList" className="" />
-          <Image src={goggle} alt="marketList" className="" />
-          <Image src={sap} alt="marketList" className="" />
-          <Image src={relic} alt="marketList" className="" />
+        <div className="grid grid-cols-2 lg:flex  items-center  justify-between  mx-4  lg:mx-48 xl:gap-14 lg:gap-1 gap-16 pb-14">
+          <Image src={aws} alt="marketList" className="" priority={true}/>
+          <Image src={goggle} alt="marketList" className=""  priority={true}/>
+          <Image src={sap} alt="marketList" className=""  priority={true}/>
+          <Image src={relic} alt="marketList" className=""  priority={true}/>
         </div>
       </div>
 
@@ -132,7 +132,7 @@ function Portofolio() {
         </div>
 
         <div className="xl:mt-[-36rem] lg:mt-[-27rem] flex flex-col gap-5 px-4  lg:px-48 z-100 relative">
-          <div className=" py-1 md:pb-14 px-6 rounded-lg">
+          <div className=" py-1 md:pb-14 lg:px-3 rounded-lg">
             <Image
               src={bgPic}
               alt="background picture"
@@ -150,12 +150,14 @@ function Portofolio() {
 
 
         <div className="flex lg:flex-row flex-col  lg:px-52 px-4 rounded-lg items-center lg:gap-5 gap-2">
-        <div className="flex flex-col  rounded-lg h-full lg:w-2/3">
+        <div className="flex flex-col  rounded-lg h-full lg:w-2/3 w-full">
           <div className=" py-1 md:pb-14">
             <Image
               src={woman}
               alt="background picture"
               className="w-full h-full lg:h-[20rem] rounded-t-lg object-fill"
+              priority={true}
+
             />
             <div className="font-DMSans font-normal py-5 md:py-8 text-[#E0E0E0] rounded-lg  text-lg shadow-lg px-6 flex items-center">
             <div className="w-full flex flex-col justify-between gap-2">
@@ -166,12 +168,13 @@ function Portofolio() {
              </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-lg h-full lg:w-1/3 ">
+        <div className="flex flex-col rounded-lg h-full lg:w-1/3 w-full ">
           <div className=" py-1 md:pb-14">
             <Image
               src={light}
               alt="background picture"
               className="w-full h-full lg:h-[20rem] rounded-t-lg object-fill"
+              priority={true}
             />
             <div className="font-DMSans font-normal py-5 md:py-8 text-[#E0E0E0] rounded-lg  text-lg shadow-lg px-6 flex items-center">
             <div className="w-full flex flex-col justify-between lg:gap-5 xl:gap-2">
@@ -186,12 +189,14 @@ function Portofolio() {
 
 
         <div className="flex lg:flex-row flex-col lg:px-52 px-4 items-center xl:gap-5 gap-2">
-        <div className="flex flex-col  rounded-lg h-full  lg:w-1/3">
+        <div className="flex flex-col  rounded-lg h-full  lg:w-1/3 w-full">
           <div className=" py-4 h-full">
             <Image
               src={goMarketPic}
               alt="background picture"
               className="w-full h-full rounded-t-lg object-cover"
+              priority={true}
+
             />
             <div className="font-DMSans font-normal py-5 md:py-8 text-[#E0E0E0] rounded-lg  text-lg shadow-lg px-6 flex items-center justify-between">
             <div className="w-full flex flex-col justify-between gap-2">
@@ -202,12 +207,14 @@ function Portofolio() {
              </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-lg h-full lg:w-2/3 shadow-lg ">
+
+        <div className="flex flex-col rounded-lg h-full lg:w-2/3 shadow-lg w-full ">
           <div className="py-9  h-full">
             <Image
               src={jandCollege}
               alt="background picture"
               className="w-full h-full  rounded-t-lg object-fill"
+              priority={true}
             />
             <div className="font-DMSans font-normal py-0 text-[#E0E0E0] rounded-lg  text-lg  px-6 flex items-center">
             <div className="w-full flex flex-col justify-between lg:gap-2">

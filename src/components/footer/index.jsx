@@ -1,23 +1,19 @@
-import {AiOutlineMail} from "react-icons/ai";
-import {FiMapPin, FiMail, FiPhone} from "react-icons/fi";
 import Logo from "../../../public/logoFooter.png";
 import Image from "next/image";
-import {FaFacebookF, FaTwitter, FaInstagram,FaLinkedinIn} from "react-icons/fa";
+import {FaTwitter} from "react-icons/fa";
 import Link from "next/link";
 import {AiFillDribbbleCircle, AiFillGithub, AiOutlineCopyrightCircle, AiFillFacebook, AiFillInstagram, AiOutlineBehanceSquare} from "react-icons/ai";
-import {BiLogoFacebookSquare} from "react-icons/bi";
 
 function Footer() {
   return (
-    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20  lg:px-36 px-4 mx-0 w-full self-end lg:pb-48">
-    
-
-      <div className="flex flex-col lg:flex-row md:justify-between lg:items-center gap-5">
-       <div className=" lg:order-1 order-4">
+    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20  lg:px-36 px-4 mx-0 w-full self-end lg:pb-48 border-t lg:border-t-0">
+      <div className="flex flex-col lg:flex-row md:justify-between lg:items-center gap-5 ">
+       <div className=" lg:order-1 order-4 flex justify-center md:block">
        <Image
             src={Logo}
             alt="logo"
-            className="  md:h-[16rem] md:w-[16rem] w-full h-full"
+            className="  md:h-[16rem] md:w-[16rem] w-[10rem] h-[10rem] object-contain"
+            priority={true}
           />
         </div>
         
@@ -44,9 +40,6 @@ function Footer() {
         
       </div>
 
-      {/* <div className="flex flex-col justify-center items-center relative my-0 mx-auto lg:pt-16 pt-8 lg:pb-6 pb-3 ">
-        <div className="bg-[#49AD09] h-[0.1rem] inline-block w-3/4"></div>
-      </div> */}
       <p className="text-base font-Poppins font-light text-center pb-6">Studio: 300, Ademona Street, Off Emeka Street, Idumota, Lagos</p>
       <div className="flex pb-2 items-center justify-center gap-10">
         <Link href={"https://www.facebook.com/medichealthwellness"} className="">
