@@ -34,21 +34,33 @@ function Cta() {
         <div className="absolute z-10 bottom-0 left-0 bg-[url(/Vector.png)] h-[40rem] w-full bg-center bg-cover bg-no-repeat"></div>
         <div className="clip-your-needful-style1 bg-[url(/Services-3.png)] h-[51.9rem] w-full bg-center bg-cover bg-no-repeat "></div>
       </div>
-    
-    <div className="flex justify-center  pt-12 lg:pt-32 h-full relative">
-    <div className="lg:grid grid-cols-2 py-4 px-4 left-0  lg:px-48 relative flex flex-col items-center h-full">
-        <div className="absolute z-10 bottom-[-28rem] bg-[url(/Vector.png)] h-[40rem] w-full bg-center bg-cover bg-no-repeat"></div>
-        <div className=" shadow-lg h-full">
-        <div className="md:relative px-4 flex gap-6 flex-col">
-        <h3 className="text-[#869AB8] font-DMSans font-normal text-sm">TRUE STORY</h3>
-        <p className="text-[#162D1B] font-DMSans font-medium text-lg">Varscon demonstrated great expertise and professional excellence and I value the integrity and engagement each team member presented at every stage.</p>
-        <p className="text-[#869AB8] font-DMSans font-normal text-sm">YEJI LEE, SEPHORA</p>
-        </div>
-        </div>
-        <Image src={testominal} alt="testominal" className="h-full w-full rounded-r-lg" /> 
-      </div>
-    </div>
 
+      <div className="flex justify-center pt-12 lg:pt-32 h-full relative lg:px-48 px-4">
+        <div className="md:grid grid-cols-2  left-0   relative flex flex-col items-center h-full md:shadow-lg">
+          <div className="absolute z-10 bottom-[-28rem] bg-[url(/Vector.png)] h-[40rem] w-full bg-center bg-cover bg-no-repeat"></div>
+            <div className="md:relative px-4 lg:px-8 flex gap-5 flex-col order-2 md:order-1">
+              <h3 className="text-[#869AB8] font-DMSans font-normal text-sm">
+                TRUE STORY
+              </h3>
+              <p className="text-[#162D1B] font-DMSans font-medium text-lg">
+                Varscon demonstrated great expertise and professional excellence
+                and I value the integrity and engagement each team member
+                presented at every stage.
+              </p>
+              <div className="relative">
+              <div className="absolute left-0 top-2 bg-[#869AB8]  h-1 rounded-full w-1 whitespace-nowrap"></div>
+              <p className="text-[#869AB8] font-DMSans font-normal text-sm pl-4">
+                YEJI LEE, SEPHORA
+              </p>
+              </div>
+          </div>
+          <Image
+            src={testominal}
+            alt="testominal"
+            className="h-full w-full rounded-r-lg order-1 md:order-2"
+          />
+        </div>
+      </div>
     </main>
   );
 }

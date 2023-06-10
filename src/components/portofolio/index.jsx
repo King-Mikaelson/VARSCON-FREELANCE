@@ -55,7 +55,7 @@ function Portofolio() {
             </p>
           </div>
           <div className="bg-[#FFFFFF] py-1 md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={Science4} alt="Painter" className="w-[17rem] h-[17rem]" />
+            <Image src={Science4} alt="Painter" className="xl:w-[17rem] xl:h-[17rem] w-[9.5rem] h-[9.5rem]" />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Engineering
             </p>
