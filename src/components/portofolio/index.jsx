@@ -105,7 +105,7 @@ function Portofolio() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:flex  items-center  justify-between  mx-4  lg:mx-48 xl:gap-14 lg:gap-1 gap-16 pb-14">
+        <div className="grid grid-cols-2 md:flex  items-center  justify-between  mx-4  lg:mx-48 xl:gap-14 lg:gap-1 gap-16 pb-14">
           <Image src={aws} alt="marketList" className="" priority={true}/>
           <Image src={goggle} alt="marketList" className=""  priority={true}/>
           <Image src={sap} alt="marketList" className=""  priority={true}/>

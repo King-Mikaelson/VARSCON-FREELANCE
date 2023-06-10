@@ -18,7 +18,14 @@
   .clip-your-needful-style1 {
     clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
 
+}
 
+.nav-animation {
+  clip-path:circle(0% at 95.3% 8.5%);
+  transition: clip-path .5s;
+}
+.custom{
+  clip-path:circle(140% at 95.3% 8.5%);
 }
 
 }
