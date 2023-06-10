@@ -58,6 +58,7 @@ function Cta() {
             src={testominal}
             alt="testominal"
             className="h-full w-full rounded-r-lg rounded-l-lg md:rounded-l-none   order-1 md:order-2"
+            priority={true}
           />
         </div>
       </div>

@@ -137,6 +137,7 @@ function Portofolio() {
               src={bgPic}
               alt="background picture"
               className="w-full h-full"
+              priority={true}
             />
             <div className="font-DMSans font-normal py-5 md:py-8 text-[#E0E0E0] rounded-lg  text-lg shadow-lg px-6 flex items-center">
             <div className="w-full flex flex-col justify-between gap-2">

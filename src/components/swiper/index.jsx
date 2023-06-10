@@ -70,7 +70,7 @@ function Carousel() {
               </div>
             </div>
             <div className="w-1/2">
-              <Image src={phone} className="w-full h-full object-cover" />
+              <Image src={phone} className="w-full h-full object-cover"priority={true} />
             </div>
           </div>
         </SwiperSlide>
@@ -93,7 +93,7 @@ function Carousel() {
               </div>
             </div>
             <div className="w-1/2">
-              <Image src={phone} className="w-full h-full object-cover" />
+              <Image src={phone} className="w-full h-full object-cover" priority={true}/>
             </div>
           </div>
         </SwiperSlide>
