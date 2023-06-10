@@ -52,7 +52,7 @@ function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative h-full flex justify-between items-center  px-4">
+          <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">
                 BRAND IDENTITY
@@ -75,12 +75,12 @@ function Carousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-full flex justify-between items-center  px-3">
+          <div className="h-full flex justify-between items-center lg:px-14 px-3">
             <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">
                 BRAND IDENTITY
               </p>
-              <p className="leading-[10rem] text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
+              <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
                 How we crafted a unique identity for the renowned affliate
                 marketer
               </p>
