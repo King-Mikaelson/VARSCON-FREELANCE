@@ -6,7 +6,7 @@ import {AiFillDribbbleCircle, AiFillGithub, AiOutlineCopyrightCircle, AiFillFace
 
 function Footer() {
   return (
-    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20  lg:px-36 px-4 mx-0 w-full self-end lg:pb-48 border-t lg:border-t-0">
+    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20 lg:px-6 xl:px-36 px-4 mx-0 w-full self-end lg:pb-48 border-t lg:border-t-0">
       <div className="flex flex-col md:flex-row md:justify-between lg:items-center gap-5 ">
        <div className=" md:order-1 order-4 flex justify-center md:block">
        <Image

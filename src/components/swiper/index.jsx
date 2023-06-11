@@ -24,15 +24,15 @@ function Carousel() {
 
   const swiperRef = useRef();
   return (
-    <div className="my-8 px-4 lg:px-48 relative">
+    <div className="my-8 px-4 lg:px-20 xl:px-48 relative">
       <button
-        className="lg:py-3 lg:px-3 py-1 px-1 shadow-lg absolute lg:left-[8rem] z-10 left-0 top-1/2 border-[#D9D9D9] rounded-full border-[0.5px] border-solid "
+        className="lg:py-3 lg:px-3 py-1 px-1 shadow-lg absolute lg:left-[4rem] xl:left-[8rem] z-10 left-0 top-1/2 border-[#D9D9D9] rounded-full border-[0.5px] border-solid "
         onClick={() => swiperRef.current?.slidePrev()}
       >
         <BsArrowLeftShort color="#869AB8" size={25} />
       </button>
       <button
-        className="lg:py-3 lg:px-3 py-1 px-1  shadow-lg absolute lg:right-[8rem] z-10 right-0 top-1/2  border-[#D9D9D9] rounded-full border-[0.5px] border-solid "
+        className="lg:py-3 lg:px-3 py-1 px-1  shadow-lg absolute lg:right-[4rem] xl:right-[8rem] z-10 right-0 top-1/2  border-[#D9D9D9] rounded-full border-[0.5px] border-solid "
         onClick={() => swiperRef.current?.slideNext()}
       >
         <BsArrowRightShort color="#869AB8" size={25} />

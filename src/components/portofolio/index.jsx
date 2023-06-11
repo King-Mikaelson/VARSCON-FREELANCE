@@ -21,7 +21,7 @@ function Portofolio() {
       <div className="relative bg-white">
         <div className="lg:pt-16 lg:pb-[24rem] pb-20  pt-14 clip-your-needful-style flex flex-col relative bg-[#005F56] w-full">
         <div className="hidden md:block absolute z-10 -bottom-0  bg-[url(/Vector2.png)] h-[50rem] w-full bg-center bg-cover bg-no-repeat"></div>
-          <div className="flex  flex-col md:flex-row items-center  px-4  lg:px-48 gap-5">
+          <div className="flex  flex-col md:flex-row items-center  px-4 lg:px-20 xl:px-48 gap-5">
             <h1 className="font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl flex ">
               Our Services
             </h1>
@@ -37,7 +37,7 @@ function Portofolio() {
           </div>
         </div>
 
-        <div className="lg:mt-[-20rem] lg:grid grid-cols-3 flex flex-col lg:flex-row gap-5 px-4  lg:px-48 z-100 relative">
+        <div className="lg:mt-[-20rem] lg:grid grid-cols-3 flex flex-col lg:flex-row gap-5 px-4  lg:px-20 xl:px-48 z-100 relative">
           <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
             <Image src={Painter} alt="Painter" className=""  priority={true}/>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
@@ -92,7 +92,7 @@ function Portofolio() {
 
       <div className="flex flex-col items-center md:items-stretch">
         <div className="lg:pt-20  pb-6 md:pb-12  pt-14 clip-your flex flex-col relative w-full">
-          <div className="flex  flex-col md:flex-row items-center  px-4  lg:px-48 gap-5">
+          <div className="flex  flex-col md:flex-row items-center  px-4  lg:px-20 xl:px-48 gap-5">
             <h1 className="font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#005F56] lg:text-[3.75rem] text-4xl flex ">
               Our Partners
             </h1>
@@ -116,7 +116,7 @@ function Portofolio() {
       <div className="relative bg-white">
         <div className="lg:pt-16 xl:pb-[30rem] lg:pb-[19rem] lg:mb-[10rem]  pb-20  pt-14 clip-your-needful-style flex flex-col relative bg-[#005F56] w-full">
         <div className="hidden md:block absolute z-10 -bottom-0  bg-[url(/Vector2.png)] h-[50rem] w-full bg-center bg-cover bg-no-repeat"></div>
-          <div className="flex  flex-col md:flex-row items-center  px-4  lg:px-48 gap-5">
+          <div className="flex  flex-col md:flex-row items-center  px-4  lg:px-20 xl:px-48 gap-5">
             <h1 className="font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl flex ">
               Our Work
             </h1>
@@ -131,7 +131,7 @@ function Portofolio() {
           </div>
         </div>
 
-        <div className="xl:mt-[-36rem] lg:mt-[-27rem] flex flex-col gap-5 px-4  lg:px-48 z-100 relative">
+        <div className="xl:mt-[-36rem] lg:mt-[-27rem] flex flex-col gap-5 px-4 lg:px-20 xl:px-48 z-100 relative">
           <div className=" py-1 md:pb-14 lg:px-3 rounded-lg">
             <Image
               src={bgPic}
@@ -150,7 +150,7 @@ function Portofolio() {
         </div>
 
 
-        <div className="flex lg:flex-row flex-col  lg:px-52 px-4 rounded-lg items-center lg:gap-5 gap-2">
+        <div className="flex lg:flex-row flex-col  lg:px-24 xl:px-52 px-4 rounded-lg items-center lg:gap-5 gap-2">
         <div className="flex flex-col  rounded-lg h-full lg:w-2/3 w-full">
           <div className=" py-1 md:pb-14">
             <Image
@@ -189,7 +189,7 @@ function Portofolio() {
         </div>
 
 
-        <div className="flex lg:flex-row flex-col lg:px-52 px-4 items-center xl:gap-5 gap-2">
+        <div className="flex lg:flex-row flex-col lg:px-24 xl:px-52 px-4 items-center xl:gap-5 gap-2">
         <div className="flex flex-col  rounded-lg h-full  lg:w-1/3 w-full">
           <div className=" py-4 h-full">
             <Image

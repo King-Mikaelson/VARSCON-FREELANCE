@@ -99,7 +99,7 @@ function NavBar() {
           </ul>
         </div> */}
 
-      <div className="md:flex flex items-center  justify-between bg-[#005F56] py-4 px-4  lg:px-48 w-full  relative">
+      <div className="md:flex flex items-center  justify-between bg-[#005F56] py-4 px-4  lg:px-20 xl:px-48 w-full  relative">
         <Bars3Icon
           onClick={() => setOpen((prevValue) => !prevValue)}
           className="md:hidden block h-6 w-6 text-white"
