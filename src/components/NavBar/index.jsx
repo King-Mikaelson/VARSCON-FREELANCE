@@ -14,10 +14,10 @@ import mobileLogo from "../../../public/mobileLogo.png";
 
 function NavBar() {
   const navigation = [
-    { name: "Home", href: "#first-section", current: true },
+    { name: "Home", href: "/", current: true },
     { name: "About", href: "#second-section", current: false },
     { name: "Services", href: "#third-section", current: false },
-    { name: "Contact", href: "#fourth-section", current: false },
+    { name: "Contact", href: "contactUs", current: false },
     { name: "Blog", href: "#fourth-section", current: false },
   ];
   const [open, setOpen] = useState(false);

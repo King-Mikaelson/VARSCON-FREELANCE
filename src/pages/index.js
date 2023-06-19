@@ -1,6 +1,4 @@
-import NavBar from '@/components/NavBar';
 import Cta from '@/components/cta';
-import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import Portofolio from '@/components/portofolio';
 import Carousel from '@/components/swiper';
@@ -19,12 +17,10 @@ export default function Home() {
         <meta charSet="utf-8"></meta>
         <link rel="icon" href="/favicon.ico"></link>
      </Head>
-      <NavBar/>
       <Hero/>
       <Carousel/>
       <Portofolio/>
       <Cta/>
-      <Footer/>
     </main>
   )
 }

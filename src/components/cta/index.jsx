@@ -1,10 +1,4 @@
 import Image from "next/image";
-import download from "../../../public/download.png";
-import marketList from "../../../public/marketList.png";
-import goMarket from "../../../public/goMarket.png";
-import voya from "../../../public/voya.png";
-import myNada from "../../../public/myNada.png";
-import eMenu from "../../../public/eMenu.png";
 import { BsArrowRightShort } from "react-icons/bs";
 import testominal from "../../../public/testominal.png";
 
