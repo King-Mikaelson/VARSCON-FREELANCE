@@ -1,3 +1,4 @@
+import NavBar from '@/components/NavBar';
 import Cta from '@/components/cta';
 import Hero from '@/components/hero';
 import Portofolio from '@/components/portofolio';
@@ -17,6 +18,7 @@ export default function Home() {
         <meta charSet="utf-8"></meta>
         <link rel="icon" href="/favicon.ico"></link>
      </Head>
+     {/* <NavBar/> */}
       <Hero/>
       <Carousel/>
       <Portofolio/>
