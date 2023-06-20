@@ -11,56 +11,56 @@ import Link from "next/link";
 import Logo from "../../../public/logo.png";
 import mobileLogo from "../../../public/mobileLogo.png";
 
+
 function NavBar({ open, setOpen }) {
   const navigation = [
     { name: "Home", href: "/", current: true },
     { name: "About", href: "#second-section", current: false },
     { name: "Services", href: "#third-section", current: false },
-    { name: "Contact", href: "/contactUs", current: false },
+    { name: "Contact", href: "contactUs", current: false },
     { name: "Blog", href: "#fourth-section", current: false },
   ];
-
   return (
-    <nav className=" w-full fixed top-0 left-0 z-[999999]">
-      <div
-        className={
-          open
-            ? "md:hidden  z-[999999]  left-0   absolute top-0 right-0 text-black bg-[#FFFFFF] w-full h-[100vh] transition-all duration-500 ease-out"
-            : "absolute left-[-50rem] transition-all duration-900 ease-in z-10  right-0 text-black bg-[#FFFFFF] w-full h-[100vh] md:hidden"
-        }
-      >
-        <div className="cursor-pointer flex justify-between px-2 pt-5">
-          <Image
-            src={mobileLogo}
-            alt="logo"
-            className=" w-[7rem] h-[100%] object-contain"
-          />
-          <div
-            onClick={() => {
-              setOpen((prevValue) => !prevValue);
-            }}
-          >
-            <XMarkIcon className="block h-10 w-6" aria-hidden="true" />
+    <nav className=" w-full fixed top-0 left-0 z-30">
+        <div
+          className={
+            open
+              ? "md:hidden z-10  left-0   absolute top-0 right-0 text-black bg-[#FFFFFF] w-full h-[100vh] transition-all duration-500 ease-out"
+              : "absolute left-[-50rem] transition-all duration-900 ease-in z-10  right-0 text-black bg-[#FFFFFF] w-full h-[100vh] md:hidden"
+          }
+        >
+          <div className="cursor-pointer flex justify-between px-2 pt-5">
+            <Image
+              src={mobileLogo}
+              alt="logo"
+              className=" w-[7rem] h-[100%] object-contain"
+            />
+            <XMarkIcon
+              onClick={() => {
+                setOpen((prevValue) => !prevValue);
+              }}
+              className="block h-10 w-6"
+              aria-hidden="true"
+            />
           </div>
+          <ul className="flex flex-col gap-5 justify-center pl-0 pl-4">
+            {navigation.map((link) => (
+              <li key={link.name} className="md:flex text-2xl md:my-0 my-3">
+                <Link
+                  onClick={() => {
+                    setOpen((prevValue) => !prevValue);
+                  }}
+                  className=" hover:underline hover:underline-offset-8 font-DMSans font-normal"
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="flex flex-col gap-5 justify-center pl-0 pl-4">
-          {navigation.map((link) => (
-            <li key={link.name} className="md:flex text-2xl md:my-0 my-3">
-              <Link
-                onClick={() => {
-                  setOpen((prevValue) => !prevValue);
-                }}
-                className=" hover:underline hover:underline-offset-8 font-DMSans font-normal"
-                href={link.href}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
 
-      {/* <div
+          {/* <div
           className={
             open
               ? "z-10 md:flex md:items-center md:static md:w-auto   absolute top-0 right-0 text-black bg-[#FFFFFF] w-full h-[100vh] transition-all duration-500 ease-out"
@@ -99,12 +99,11 @@ function NavBar({ open, setOpen }) {
         </div> */}
 
       <div className="md:flex flex items-center  justify-between bg-[#005F56] py-4 px-4  lg:px-20 xl:px-48 w-full  relative">
-        <div onClick={() => setOpen((prevValue) => !prevValue)}>
-          <Bars3Icon
-            className="md:hidden block h-6 w-6 text-white"
-            aria-hidden="true"
-          />
-        </div>
+        <Bars3Icon
+          onClick={() => setOpen((prevValue) => !prevValue)}
+          className="md:hidden block h-6 w-6 text-white"
+          aria-hidden="true"
+        />
         <div className="cursor-pointer flex justify-between items-center px-2">
           <Image
             src={Logo}
