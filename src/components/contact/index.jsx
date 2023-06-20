@@ -12,7 +12,7 @@ function Contact() {
           We will like to hear from you and learn about ways our services can
           provide for your business needs.{" "}
         </h2>
-        <div className="hidden md:block absolute z-10 top-24  bg-[url(/Vector2.png)] h-[50rem] w-full bg-center bg-cover bg-no-repeat"></div>
+        <div className="hidden md:block absolute z-10 top-[-5rem]  bg-[url(/Vector2.png)] h-full w-full bg-center bg-cover bg-no-repeat"></div>
       </div>
 
       <div className="xl:mt-[-29rem] lg:mt-[-29rem] flex flex-col gap-5 px-4 lg:px-20 xl:px-48 z-100 relative">
