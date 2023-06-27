@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BsArrowRightShort } from "react-icons/bs";
 import testominal from "../../../public/testominal.png";
+import Link from "next/link";
 
 function Cta() {
   return (
@@ -17,9 +18,9 @@ function Cta() {
 
       <div className="flex justify-center py-4">
         <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
-          <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
+          <Link href={"/contactUs"} className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
             Contact Us
-          </p>
+          </Link>
           <BsArrowRightShort className="text-[#005F56] text-4xl" />
         </button>
       </div>
