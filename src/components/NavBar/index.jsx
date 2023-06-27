@@ -13,12 +13,18 @@ import mobileLogo from "../../../public/mobileLogo.png";
 
 
 function NavBar({ open, setOpen }) {
+  // const navigation = [
+  //   { name: "Home", href: "/", current: true },
+  //   { name: "About", href: "#second-section", current: false },
+  //   { name: "Services", href: "#third-section", current: false },
+  //   { name: "Contact", href: "contactUs", current: false },
+  //   { name: "Blog", href: "#fourth-section", current: false },
+  // ];
+
+
   const navigation = [
     { name: "Home", href: "/", current: true },
-    { name: "About", href: "#second-section", current: false },
-    { name: "Services", href: "#third-section", current: false },
     { name: "Contact", href: "contactUs", current: false },
-    { name: "Blog", href: "#fourth-section", current: false },
   ];
   return (
     <nav className=" w-full fixed top-0 left-0 z-30">
