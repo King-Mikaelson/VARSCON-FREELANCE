@@ -64,7 +64,7 @@ function Footer() {
        </div>
        <div className="flex justify-center items-center gap-3 pt-4">
         <AiOutlineCopyrightCircle className="text-[#869AB8]"/>
-        <p className="text-[#869AB8]">2021 Varscon</p>
+        <p className="text-[#869AB8]">2023 Varscon</p>
        </div>
 
     </main>
