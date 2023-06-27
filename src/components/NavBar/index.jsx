@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/logo.png";
 import mobileLogo from "../../../public/mobileLogo.png";
+import { usePathname } from "next/navigation";
 
 
 function NavBar({ open, setOpen }) {
@@ -23,9 +24,12 @@ function NavBar({ open, setOpen }) {
 
 
   const navigation = [
-    { name: "Home", href: "/", current: true },
-    { name: "Contact", href: "contactUs", current: false },
+    { name: "Home", href: "/", current: true, path:"/" },
+    { name: "Contact", href: "contactUs", current: false, path:"/contactUs" },
   ];
+
+  const pathName = usePathname();
+  console.log(pathName)
   return (
     <nav className=" w-full fixed top-0 left-0 z-30">
         <div
@@ -122,7 +126,7 @@ function NavBar({ open, setOpen }) {
             <li key={link.name} className="md:ml-8 text-2xl md:my-0 my-7">
               <Link
                 className={
-                  link.name === "Home"
+                  link.path === pathName
                     ? "text-[#FFFFFF] text-sm font-DMSans font-semibold hover:underline hover:underline-offset-8"
                     : "text-[#869AB8] text-sm font-DMSans font-normal hover:underline hover:underline-offset-8"
                 }
