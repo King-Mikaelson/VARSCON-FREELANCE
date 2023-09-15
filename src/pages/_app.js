@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Footer from '@/components/footer';
 
 
+
 export default function App({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
 
