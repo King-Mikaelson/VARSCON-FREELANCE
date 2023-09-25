@@ -13,8 +13,62 @@ import light from "../../../public/light.png";
 import goMarketPic from "../../../public/goMarketPic.png";
 import jandCollege from "../../../public/jandCollege.png";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Img1 from "../../../public/Img1.png";
+import Img2 from "../../../public/Img2.png";
+import Img3 from "../../../public/Img3.png";
+import Img4 from "../../../public/Img4.png";
+import Img5 from "../../../public/Img5.png";
+import Img6 from "../../../public/Img6.png";
+import Img7 from "../../../public/Img7.png";
+import Img8 from "../../../public/Img8.png";
+
+const ImgArr = [
+  {
+    img: Img1,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img2,
+    name: "Agu Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img3,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img4,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img5,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img6,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img7,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+  {
+    img: Img8,
+    name: "Kosi Nzeako",
+    role: "Developer",
+  },
+];
 
 function Portofolio() {
+  const router = useRouter();
+
   return (
     <main className="relative flex-col flex justify-center  w-full mt-12 ">
       <div className="relative bg-white">
@@ -47,15 +101,15 @@ function Portofolio() {
             </p>
 
             <div className="flex py-4">
-              <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
-                <Link
-                  href={"/devShop"}
-                  className="font-DMSans font-bold  text-[#005F56] text-sm text-center "
-                >
+              <Link
+                href={"/devShop"}
+                className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center"
+              >
+                <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
                   Contact Us
-                </Link>
+                </p>
                 <BsArrowRightShort className="text-[#005F56] text-4xl" />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
@@ -74,15 +128,15 @@ function Portofolio() {
             </p>
 
             <div className="flex  py-4">
-              <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
-                <Link
-                  href={"/advisory"}
-                  className="font-DMSans font-bold  text-[#005F56] text-sm text-center "
-                >
+              <Link
+                href={"/advisory"}
+                className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center"
+              >
+                <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
                   Explore
-                </Link>
+                </p>
                 <BsArrowRightShort className="text-[#005F56] text-4xl" />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="bg-[#FFFFFF] py-1 pb-8  md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
@@ -101,19 +155,69 @@ function Portofolio() {
             </p>
 
             <div className="flex py-4">
-              <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
-                <Link
-                  href={"/recruitment"}
-                  className="font-DMSans font-bold  text-[#005F56] text-sm text-center "
-                >
+              <Link
+                href={"/recruitment"}
+                className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center"
+              >
+                <p className="font-DMSans font-bold  text-[#005F56] text-sm text-center ">
                   Explore
-                </Link>
+                </p>
                 <BsArrowRightShort className="text-[#005F56] text-4xl" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
+      <main className="relative flex-col flex  lg:mt-32 mt-12   w-full px-4  lg:px-16  ">
+        <div className=" lg:pb-20  pt-14  flex flex-col relative  w-full">
+          <div className="flex  flex-col items-center  px-4 lg:px-20 xl:px-48 gap-5">
+            <h1 className="font-DMSans font-bold lg:leading-[4.5rem]   lg:text-[3.75rem] text-4xl flex ">
+              Meet the team
+            </h1>
+            <h2 className="font-DMSans font-normal pb-5  text-lg">
+              Top team members you will have direct contact with for your
+              project.
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-4  grid-cols-2 gap-y-6">
+            {ImgArr.map((data, index) =>
+              index % 2 ? (
+                <div
+                  key={index}
+                  className="w-full lg:-mb-36 -mb-8  flex flex-col relative justify-center items-center"
+                >
+                  <Image
+                    alt="profile"
+                    src={data.img}
+                    className="w-full h-full object-contain"
+                  />
+                  <p className="font-DMSans font-semibold text-xl absolute lg:bottom-16 bottom-5">
+                    {data.name}
+                  </p>
+                  <p className=" absolute lg:bottom-9 bottom-0">{data.role}</p>
+                </div>
+              ) : (
+                <div
+                  key={index}
+                  className="w-full flex flex-col gap-1 justify-center items-center"
+                >
+                  <Image
+                    src={data.img}
+                    className="w-full h-full"
+                    alt="profile"
+                  />
+                  <p className="font-DMSans font-semibold text-xl">
+                    {data.name}
+                  </p>
+                  <p>{data.role}</p>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </main>
 
       {/* <div className="flex flex-col items-center md:items-stretch">
         <div className="lg:pt-20  pb-6 md:pb-12  pt-14 clip-your flex flex-col relative w-full">
