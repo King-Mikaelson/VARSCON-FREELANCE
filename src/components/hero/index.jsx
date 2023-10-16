@@ -4,48 +4,69 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import download from "../../../public/download.png";
 
-function Hero({ header, description, descriptionDevShop,link, descriptionRecruitment,descriptionAdvisory,advisoryHeader,advisoryPoint,advisoryPoint1,advisoryPoint2,advisoryPoint3}) {
-  const router = useRouter()
+function Hero({
+  header,
+  description,
+  descriptionDevShop,
+  link,
+  descriptionRecruitment,
+  descriptionAdvisory,
+  advisoryHeader,
+  advisoryPoint,
+  advisoryPoint1,
+  advisoryPoint2,
+  advisoryPoint3,
+}) {
+  const router = useRouter();
+
   return (
     <main className="relative flex-col flex justify-center  w-full mt-12 ">
       <div className="lg:pt-16 lg:pb-32 pb-28  pt-14 clip-your-needful-style  flex justify-center flex-col items-center relative bg-[#005F56] w-full ">
         <h1
           className={`${
-            descriptionDevShop
-              ? "font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[20ch] flex"
-              : "font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[18ch] flex"
+            Boolean(descriptionDevShop) === true
+              ? `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[25ch] flex`
+              : Boolean(descriptionRecruitment) === true
+              ? `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[25ch] flex`
+              : `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[18ch] flex`
           }`}
         >
           {header}
         </h1>
 
-        
-        {descriptionAdvisory && 
-        <div className="px-6">
-        <h2 className="font-DMSans font-normal py-1 text-[#E0E0E0] text-lg text-center">{advisoryHeader}</h2>
-          <ol className="list-disc flex gap-3 flex-col">
+        {/* {descriptionAdvisory && (
+          <div className="px-6">
+            <h2 className="font-DMSans font-normal py-1 text-[#E0E0E0] text-lg text-center">
+              {advisoryHeader}
+            </h2>
+            <ol className="list-disc flex gap-3 flex-col">
               <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-               {advisoryPoint}
+                {advisoryPoint}
               </li>
               <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              {advisoryPoint1}
+                {advisoryPoint1}
               </li>
               <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              {advisoryPoint2}
+                {advisoryPoint2}
               </li>
               <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              {advisoryPoint3}
+                {advisoryPoint3}
               </li>
-         </ol>
-        </div>
-        }
-        
+            </ol>
+          </div>
+        )} */}
 
         <h3 className="font-DMSans font-normal py-5 text-[#E0E0E0] text-lg text-center lg:w-[52ch]">
-          {description || descriptionDevShop ||  descriptionRecruitment || descriptionAdvisory}
+          {description ||
+            descriptionDevShop ||
+            descriptionRecruitment ||
+            descriptionAdvisory}
         </h3>
 
-        <div onClick={() => router.push("/contactUs")} className="flex justify-center py-4 cursor-pointer">
+        <div
+          onClick={() => router.push("/contactUs")}
+          className="flex justify-center py-4 cursor-pointer"
+        >
           <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
             <Link
               href={"/contactUs"}
