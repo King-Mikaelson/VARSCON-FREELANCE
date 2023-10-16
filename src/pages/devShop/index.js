@@ -3,19 +3,8 @@ import { DM_Sans } from "next/font/google";
 import BusinessPlan from "../../../public/BusinessPlan.png";
 import Painter from "../../../public/Painter.png";
 import Science4 from "../../../public/Science4.png";
-import Link from "next/link";
-import React, { useRef, useState } from "react";
 import Image from "next/image";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -148,7 +137,7 @@ function DevShop() {
       </div>
 
       <main className="relative flex-col flex bg-[#005F56] lg:mt-32 mt-12   ">
-        <div className="relative flex-col flex z-50  w-full px-4  lg:px-20 xl:px-48">
+        <div className="relative flex-col flex z-20  w-full px-4  lg:px-20 xl:px-48">
           <div className="relative ">
             <div className=" pb-20  pt-14  flex flex-col relative  w-full">
               <div className="flex  flex-col items-center  px-4 lg:px-20 xl:px-48 gap-5">
