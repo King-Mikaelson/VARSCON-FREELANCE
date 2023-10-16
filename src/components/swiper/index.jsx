@@ -53,17 +53,17 @@ function Carousel() {
       >
         <SwiperSlide>
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
-            <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
+            <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
                 With Varscon, You Get the:
               </p>
-              {/* <p className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
-                How we crafted a unique identity for the renowned affliate
-                marketer
-              </p> */}
               <ul className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-3xl text-base">
                 <li className="list-disc"> Best experience</li>
               </ul>
+              <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
+                Providing unparalleled out-sourcing experience with top-notch
+                service and satisfaction.
+              </p>
             </div>
             <div className="w-1/2">
               <Image
@@ -75,36 +75,10 @@ function Carousel() {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <div className="h-full flex justify-between items-center lg:px-14 px-3">
-            <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
-              <p className="text-left text-[#869AB8] font-DMSans font-normal text-sm">
-                BRAND IDENTITY
-              </p>
-              <p className="leading-loose text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
-                How we crafted a unique identity for the renowned affliate
-                marketer
-              </p>
-              <div className="flex  lg:py-4 py-2">
-                <button className="flex  bg-[#00C664] rounded-lg lg:py-4 py-3 px-6 items-center">
-                  <p className="font-DMSans font-medium  text-[#005F56] text-sm text-center ">
-                    Read Case Study
-                  </p>
-                </button>
-              </div>
-            </div>
-            <div className="w-1/2">
-              <Image
-                src={phone}
-                className="w-full h-full object-cover"
-                priority={true}
-              />
-            </div>
-          </div>
-        </SwiperSlide> */}
+
         <SwiperSlide>
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
-            <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
+            <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
                 With Varscon, You Get the:
               </p>
@@ -115,6 +89,10 @@ function Carousel() {
               <ul className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-3xl text-base">
                 <li className="list-disc">Unbeatable Prices</li>
               </ul>
+
+              <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
+                Competitive prices and unmatched value for your money.
+              </p>
             </div>
             <div className="w-1/2">
               <Image
@@ -128,17 +106,18 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
-            <div className="flex flex-col lg:gap-6 gap-3 w-1/2">
+            <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
                 With Varscon, You Get the:
               </p>
-              {/* <p className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
-                How we crafted a unique identity for the renowned affliate
-                marketer
-              </p> */}
               <ul className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-3xl text-base">
                 <li className="list-disc">Leading Technologies</li>
               </ul>
+
+              <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
+                Providing unparalleled out-sourcing experience with top-notch
+                service and satisfaction.
+              </p>
             </div>
             <div className="w-1/2">
               <Image
