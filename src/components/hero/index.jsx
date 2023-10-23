@@ -11,11 +11,6 @@ function Hero({
   link,
   descriptionRecruitment,
   descriptionAdvisory,
-  advisoryHeader,
-  advisoryPoint,
-  advisoryPoint1,
-  advisoryPoint2,
-  advisoryPoint3,
 }) {
   const router = useRouter();
 
@@ -28,33 +23,14 @@ function Hero({
               ? `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[25ch] flex`
               : Boolean(descriptionRecruitment) === true
               ? `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[25ch] flex`
+              : Boolean(descriptionAdvisory) === true
+              ? `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[15ch] flex`
               : `font-DMSans font-bold  lg:leading-[4.5rem] pb-5 text-[#C9FCCF] lg:text-[3.75rem] text-4xl text-center lg:w-[18ch] flex`
           }`}
         >
           {header}
         </h1>
 
-        {/* {descriptionAdvisory && (
-          <div className="px-6">
-            <h2 className="font-DMSans font-normal py-1 text-[#E0E0E0] text-lg text-center">
-              {advisoryHeader}
-            </h2>
-            <ol className="list-disc flex gap-3 flex-col">
-              <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-                {advisoryPoint}
-              </li>
-              <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-                {advisoryPoint1}
-              </li>
-              <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-                {advisoryPoint2}
-              </li>
-              <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-                {advisoryPoint3}
-              </li>
-            </ol>
-          </div>
-        )} */}
 
         <h3 className="font-DMSans font-normal py-5 text-[#E0E0E0] text-lg text-center lg:w-[52ch]">
           {description ||
@@ -67,14 +43,14 @@ function Hero({
           onClick={() => router.push("/contactUs")}
           className="flex justify-center py-4 cursor-pointer"
         >
-          <button className="flex  bg-[#00C664] rounded-lg justify-between py-2 px-6 items-center">
+          <button className="flex  bg-[#00C664] rounded-lg justify-between py-4 px-8 items-center">
             <Link
               href={"/contactUs"}
               className="font-DMSans font-bold  text-[#005F56] text-sm text-center "
             >
               {link ? link : "Contact Us"}
             </Link>
-            <BsArrowRightShort className="text-[#005F56] text-4xl" />
+            {/* <BsArrowRightShort className="text-[#005F56] text-4xl" /> */}
           </button>
         </div>
 

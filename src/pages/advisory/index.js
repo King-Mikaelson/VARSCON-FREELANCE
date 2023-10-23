@@ -7,6 +7,7 @@ import Painter from "../../../public/Painter.png";
 import Science4 from "../../../public/Science4.png";
 import Image from "next/image";
 
+
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variants: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,13 +20,6 @@ export default function Advisory() {
     <div className={`bg-[#FFFFFF] flex flex-col ${dmSans.className}`}>
       <Hero
         header={"The Expert Opinion You Need"}
-        // advisoryHeader={
-        //   "We're not just good; we're the best! TechAid is your home away from home for"
-        // }
-        // advisoryPoint={"No-code solutions"}
-        // advisoryPoint1={"Go-to-market strategy"}
-        // advisoryPoint2={"Product development consultancy or"}
-        // advisoryPoint3={"Technical advice to scale your business"}
         descriptionAdvisory={
           "We've got it all covered with seasoned professionals and well-versed senior managers who will take your business to the next level. "
         }
@@ -33,24 +27,59 @@ export default function Advisory() {
 
       <div className="flex  flex-col items-center  px-4 lg:px-20 xl:px-48 gap-5 pt-10">
         <div className="flex flex-col gap-2  px-6">
-          <h2 className="font-DMSans font-normal py-1 text-black  text-center text-4xl  leading-[4rem]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-center">
+            <div className="order-2 lg:order-1">
+            <h2 className="font-DMSans font-bold   py-1 text-black  text-4xl">
             We're not just good; we're the best! TechAid is your home away from
             home for
           </h2>
-          <ol className="list-disc flex gap-3 flex-col">
-            <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              No-code solutions
-            </li>
-            <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              Go-to-market strategy
-            </li>
-            <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              Product development consultancy or
-            </li>
-            <li className=" font-DMSans font-normal  text-[#869AB8] text-lg">
-              Technical advice to scale your business
-            </li>
-          </ol>
+            <div className="flex gap-5 flex-col">
+              <div className="flex gap-6 items-center">
+                <div className="rounded-[200rem] bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
+                  1
+                </div>
+                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
+                No-code solutions
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
+                  2
+                </div>
+                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
+                Go-to-market strategy
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
+                  3
+                </div>
+                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
+                Product development consultancy or
+              </div>
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white  w-16 h-16 text-3xl">
+                  4
+                </div>
+                <div className="font-DMSans font-normal  text-[#869AB8] text-lg">
+                Technical advice to scale your business
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2">
+            <Image
+              src={BusinessPlan}
+              alt="Painter"
+              className="w-full"
+              priority={true}
+            />
+          </div>
+        </div>
         </div>
       </div>
 
