@@ -2,32 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @layer utilities {
-
   .clip-your-needful-style {
-
-      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw)); */
-      clip-path: polygon(0 0, 100% 0, 100% 76%, 0 93%);
-
-
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw)); */
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 0 93%);
   }
   .clip-your-needful-style1 {
     clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+  }
 
-}
-
-.nav-animation {
-  clip-path:circle(0% at 95.3% 8.5%);
-  transition: clip-path .5s;
-}
-.custom{
-  clip-path:circle(140% at 95.3% 8.5%);
-}
-
+  .nav-animation {
+    clip-path: circle(0% at 95.3% 8.5%);
+    transition: clip-path 0.5s;
+  }
+  .custom {
+    clip-path: circle(140% at 95.3% 8.5%);
+  }
 }
 
 html,
@@ -95,7 +87,6 @@ a {
   transform: rotate(-90deg);
 }
 
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -117,4 +108,28 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
 }
