@@ -116,7 +116,7 @@ function Portofolio() {
             <Image
               src={Science4}
               alt="Painter"
-              className="xl:w-[17rem] xl:h-[17rem] w-[9.5rem] h-[9.5rem]"
+              className="md:w-[17rem] md:h-[17rem] w-[9.5rem] h-[9.5rem]"
               priority={true}
             />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
@@ -169,7 +169,7 @@ function Portofolio() {
         </div>
       </div>
 
-      <main className="relative flex-col flex  lg:mt-32 mt-12   w-full px-4  lg:px-16  ">
+      {/* <main className="relative flex-col flex  lg:mt-32 mt-12   w-full px-4  lg:px-16  ">
         <div className=" lg:pb-20  pt-14  flex flex-col relative  w-full">
           <div className="flex  flex-col items-center  px-4 lg:px-20 xl:px-48 gap-5">
             <h1 className="font-DMSans font-bold lg:leading-[4.5rem]   lg:text-[3.75rem] text-4xl flex ">
@@ -217,7 +217,7 @@ function Portofolio() {
             )}
           </div>
         </div>
-      </main>
+      </main> */}
 
       {/* <div className="flex flex-col items-center md:items-stretch">
         <div className="lg:pt-20  pb-6 md:pb-12  pt-14 clip-your flex flex-col relative w-full">
