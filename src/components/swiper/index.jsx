@@ -55,7 +55,7 @@ function Carousel() {
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
             <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
-                With Varscon, You Get the:
+                With Varscon, You Get:
               </p>
               <ul className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-3xl text-base">
                 <li className="list-disc"> Best experience</li>
@@ -80,7 +80,7 @@ function Carousel() {
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
             <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
-                With Varscon, You Get the:
+                With Varscon, You Get:
               </p>
               {/* <p className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-4xl text-base">
                 How we crafted a unique identity for the renowned affliate
@@ -108,7 +108,7 @@ function Carousel() {
           <div className="relative h-full flex justify-between items-center lg:px-14 px-4">
             <div className="flex flex-col lg:gap-3 gap-3 w-1/2">
               <p className="text-left text-[#869AB8] font-DMSans font-normal text-lg">
-                With Varscon, You Get the:
+                With Varscon, You Get:
               </p>
               <ul className="leading-8 text-left text-[#162D1B] font-DMSans font-bold md:text-3xl text-base">
                 <li className="list-disc">Leading Technologies</li>

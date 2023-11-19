@@ -37,7 +37,7 @@ function NavBar({ open, setOpen }) {
   const pathName = usePathname();
   // console.log(pathName);
   return (
-    <nav className=" w-full fixed top-0 left-0 z-30">
+    <nav className=" w-full fixed top-0 left-0 z-[999999999999999999999]">
       <div
         className={
           open

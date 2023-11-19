@@ -1,78 +1,88 @@
 import Logo from "../../../public/logoFooter.png";
 import Image from "next/image";
-import {FaTwitter} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
-import {AiFillDribbbleCircle, AiFillGithub, AiOutlineCopyrightCircle, AiFillFacebook, AiFillInstagram, AiOutlineBehanceSquare} from "react-icons/ai";
+import {
+  AiFillDribbbleCircle,
+  AiFillGithub,
+  AiOutlineCopyrightCircle,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiOutlineBehanceSquare,
+} from "react-icons/ai";
 
 function Footer() {
   return (
-    <main className="z-[20] mt-10 mb-auto bg-[#FFFFFF] pt-10 lg:pt-20 lg:px-6 xl:px-36 px-4 mx-0 w-full self-end lg:pb-48 border-t lg:border-t-0">
-      <div className="flex flex-col md:flex-row md:justify-between lg:items-center gap-5 ">
-       <div className=" md:order-1 order-4 flex justify-center md:block">
-       <Image
+    <main className="z-[20] mt-0 mb-10 bg-[#FFFFFF] pt-10  lg:px-6 xl:px-36 px-4 mx-0 w-full self-end  border-t lg:border-t-0">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 ">
+        <div className=" flex justify-center md:block">
+          <Image
             src={Logo}
             alt="logo"
             className="  md:h-[16rem] md:w-[16rem] w-[10rem] h-[10rem] object-contain"
             priority={true}
           />
         </div>
-        
-        <div className="text-[1.857rem] flex flex-col gap-5 font-Satoshi md:order-2 order-1">
-        <h3 className="text-[1.27rem] font-bold font-Poppins text-[#334737]">About Us</h3>
-          <Link href="#first-section" className="text-lg font-light font-Poppins text-[#869AB8]">Our Work</Link>
-          <Link href="#second-section" className="text-lg font-light font-Poppins text-[#869AB8]">Our Services</Link>
-          <Link href="#third-section" className="text-lg font-light font-Poppins text-[#869AB8]">Our Clients</Link>
-        </div>
 
-        <div className="text-[1.857rem] flex flex-col gap-5  font-Satoshi  md:order-2 order-2">
-        <h3 className="text-[1.27rem] font-bold font-Poppins text-[#334737]">INFORMATION</h3>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">Code of Conduct</p>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">Privacy Policy</p>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">Rate Card</p>
-        </div>
+        <Link
+          href={"/"}
+          className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
+        >
+          Home
+        </Link>
 
-        <div className="text-[1.857rem] flex flex-col gap-5  font-Satoshi  md:order-2 order-2">
-        <h3 className="text-[1.27rem] font-bold font-Poppins text-[#334737]">CONTACT</h3>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">Contact Form</p>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">Hello@varson.com</p>
-          <p  className="text-lg font-light font-Poppins text-[#869AB8]">+234 (810) 164 8490</p>
-        </div>
-        
+        <Link
+          href={"/devShop"}
+          className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
+        >
+          DevShop
+        </Link>
+
+        <Link
+          href={"/advisory"}
+          className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
+        >
+          Advisory
+        </Link>
+
+        <Link
+          href={"/recruitment"}
+          className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
+        >
+          Recruitment
+        </Link>
+
+        <Link
+          href={"/contactUs"}
+          className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
+        >
+          Contact
+        </Link>
+
+        {/* <p className="lg:text-[0.9375rem] gap-1 flex items-center text-base font-sans text-[#1E2833] opacity-50">
+          Copyright{" "}
+          <span>
+            <AiOutlineCopyrightCircle />
+          </span>
+          2023 Varscon All rights reserved.
+        </p> */}
       </div>
-
-      <p className="text-base font-Poppins font-light text-center pb-6">Studio: 300, Ademona Street, Off Emeka Street, Idumota, Lagos</p>
-      <div className="flex pb-2 items-center justify-center md:gap-10 gap-5">
-        <Link href={"https://www.facebook.com/medichealthwellness"} className="">
-        <AiFillFacebook size={25} className="inline-block text-[#334737] cursor-pointer text-lg" />
-        </Link>
-        <Link href={"https://www.instagram.com/medichealthwellness/"} className="">
-        <AiFillInstagram size={25}  className="inline-block text-[#334737] cursor-pointer"/>
-        </Link>
-        <Link href={"/"} className=" ">
-        <FaTwitter  className="inline-block text-[#334737] cursor-pointer" />
-        </Link>
-        <Link  href={"/"} className="">
-        <AiFillDribbbleCircle size={25}  className="inline-block text-[#334737] cursor-pointer" />
-        </Link>
-        <Link  href={"/"} className="">
-        <AiOutlineBehanceSquare size={25}  className="inline-block text-[#334737] cursor-pointer" />
-        </Link>
-        <Link  href={"/"} className="">
-        <AiFillGithub size={25}  className="inline-block text-[#334737] cursor-pointer" />
-        </Link>
-        
-       </div>
-       <div className="flex justify-center items-center gap-3 pt-4">
-        <AiOutlineCopyrightCircle className="text-[#869AB8]"/>
-        <p className="text-[#869AB8]">2023 Varscon</p>
-       </div>
-
+      <div className="md:flex md:justify-center md:items-center flex-col gap-1 mt-10 lg:mt-0">
+        <p className="text-[0.9375rem] gap-1 flex items-center  font-sans text-[#1E2833] opacity-50 text-center ">
+          Copyright
+          <span>
+            <AiOutlineCopyrightCircle />
+          </span>
+          2023 Varscon All rights reserved.
+        </p>
+        <p className="lg:text-center">
+          Any unauthorized redistribution or reproduction of any copyrighted
+          materials on this website is strictly prohibited. Other company names
+          are trademarks of their respective owners.
+        </p>
+      </div>
     </main>
   );
 }
 
 export default Footer;
-
-
-
-

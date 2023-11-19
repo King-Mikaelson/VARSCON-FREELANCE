@@ -11,9 +11,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ToastContainer />
-      {/* <NavBar open={open} setOpen={setOpen} /> */}
+      <NavBar open={open} setOpen={setOpen} />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

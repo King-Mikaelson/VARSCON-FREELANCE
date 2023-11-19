@@ -6,7 +6,9 @@ import BusinessPlan from "../../../public/BusinessPlan.png";
 import Painter from "../../../public/Painter.png";
 import Science4 from "../../../public/Science4.png";
 import Image from "next/image";
-
+import dev3 from "../../../public/dev3.png";
+import dev2 from "../../../public/dev2.png";
+import dev from "../../../public/dev.png";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -25,63 +27,58 @@ export default function Advisory() {
         }
       />
 
-      <div className="flex  flex-col items-center  px-4 lg:px-20 xl:px-48 gap-5 pt-10">
-        <div className="flex flex-col gap-2  px-6">
-        <div className="grid lg:grid-cols-2 grid-cols-1 items-center">
-            <div className="order-2 lg:order-1">
-            <h2 className="font-DMSans font-bold   py-1 text-black  text-4xl">
-            We're not just good; we're the best! TechAid is your home away from
-            home for
-          </h2>
-            <div className="flex gap-5 flex-col">
-              <div className="flex gap-6 items-center">
-                <div className="rounded-[200rem] bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
-                  1
-                </div>
-                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
-                No-code solutions
-                </div>
+      <main className="relative flex-col flex justify-center  w-full ">
+        <div>
+          <div className="lg:pt-16  pt-8  flex flex-col relative w-full items-center">
+            <div className="flex  flex-col md:flex-row items-center  px-4 lg:px-20 xl:px-48 gap-5">
+              <h1 className="font-DMSans font-bold   lg:leading-[3rem] pb-5 text-black lg:text-[ 2.5rem] text-3xl flex ">
+                We're not just good; we're the best! TechAid is your home away
+                from home for...
+              </h1>
+            </div>
+          </div>
+
+          <div className="lg:grid grid-cols-3 flex flex-col lg:flex-row gap-5 px-4  lg:px-20 xl:px-48  relative">
+            <div className=" py-1 md:pb-14 pb-8 px-6 flex flex-col gap-3 items-center lg:items-start justify-center lg:justify-start">
+              <Image src={dev} alt="dev" className="w-16 h-16 lg:w-28 lg:h-28" priority={true} />
+
+              <div className="flex flex-col gap-1">
+                <h4 className="text-[#271B36] text-[1.125rem] font-bold font-DMSans">
+                  No-code solutions
+                </h4>
+                <p className="text-[#869AB8] text-base font-DMSans font-normal">
+                Build simple custom applications and workflows that automate business processes for your small business/project.
+                </p>
+              </div>
+            </div>
+            <div className=" py-1 md:pb-14 pb-8 px-6 flex flex-col gap-3 items-center  lg:items-start justify-center lg:justify-start">
+              <div>
+                <Image src={dev2} alt="dev2" priority={true} className="w-16 h-16 lg:w-28 lg:h-28"/>
               </div>
 
-              <div className="flex gap-6 items-center">
-                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
-                  2
-                </div>
-                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
-                Go-to-market strategy
-                </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-[#271B36] text-[1.125rem] font-bold font-DMSans">
+                  Go-to-market strategy
+                </h4>
+                <p className="text-[#869AB8] text-base font-DMSans font-normal">
+                Develop custom market strategies to conquer the marketplace and bring your business the competitive advantage it needs.
+                </p>
               </div>
-
-              <div className="flex gap-6 items-center">
-                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white   w-16 h-16 text-3xl">
-                  3
-                </div>
-                <div className=" w-fit font-DMSans font-normal  text-[#869AB8] text-lg">
-                Product development consultancy or
-              </div>
-              </div>
-
-              <div className="flex gap-6 items-center">
-                <div className="rounded-full bg-[#005F56] flex items-center justify-center text-white  w-16 h-16 text-3xl">
-                  4
-                </div>
-                <div className="font-DMSans font-normal  text-[#869AB8] text-lg">
-                Technical advice to scale your business
-              </div>
+            </div>
+            <div className=" py-1 pb-8  md:pb-14 px-6 flex flex-col gap-3 items-center  lg:items-start justify-center lg:justify-start">
+              <Image src={dev3} alt="dev3" className="w-16 h-16 lg:w-28 lg:h-28" priority={true} />
+              <div className="flex flex-col gap-1">
+                <h4 className="text-[#271B36] text-[1.125rem] font-bold font-DMSans lg:whitespace-nowrap">
+                  Product development consultancy
+                </h4>
+                <p className="text-[#869AB8] text-base font-DMSans font-normal">
+                Enhance project management by leveraging the insights of senior managers to meticulously track and optimize your projects.
+                </p>
               </div>
             </div>
           </div>
-          <div className="order-1 lg:order-2">
-            <Image
-              src={BusinessPlan}
-              alt="Painter"
-              className="w-full"
-              priority={true}
-            />
-          </div>
         </div>
-        </div>
-      </div>
+      </main>
 
       <div className=" bg-white">
         <div className="lg:pt-16  pt-8  flex flex-col relative w-full items-center">
@@ -95,7 +92,7 @@ export default function Advisory() {
         <div className=" flex flex-col lg:flex-row gap-5 px-4   relative  mx-auto my-0 lg:w-[800px]">
           <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg shadow-lg">
             <div className="flex justify-center">
-            <Image src={Painter} alt="Painter" className="" priority={true} />
+              <Image src={Painter} alt="Painter" className="" priority={true} />
             </div>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Flexible no-code solutions for small projects
@@ -118,14 +115,14 @@ export default function Advisory() {
             </div>
           </div>
           <div className="bg-[#FFFFFF] py-1 pb-8  md:pb-14 px-6 object-contain rounded-lg shadow-lg">
-          <div className="flex justify-center">
-            <Image
-              src={BusinessPlan}
-              alt="Painter"
-              className=""
-              priority={true}
+            <div className="flex justify-center">
+              <Image
+                src={BusinessPlan}
+                alt="Painter"
+                className=""
+                priority={true}
               />
-              </div>
+            </div>
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Track your projects with ideas from senior managers
             </p>

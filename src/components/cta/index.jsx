@@ -32,7 +32,7 @@ function Cta() {
 
       <div className="flex justify-center pt-12 lg:pt-32 h-full relative lg:px-24 xl:px-52 px-4">
         <div className="md:grid grid-cols-2  left-0   relative flex flex-col items-center h-full shadow-lg">
-          <div className="absolute z-10 bottom-[-10rem] bg-[url(/Vector.png)] h-[10rem] w-full bg-center bg-cover bg-no-repeat"></div>
+
             <div className="md:relative px-4 lg:px-8 flex gap-5 flex-col order-2 md:order-1 py-6 md:py-0">
               <h3 className="text-[#869AB8] font-DMSans font-normal text-sm">
                 TRUE STORY

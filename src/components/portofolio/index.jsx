@@ -1,18 +1,10 @@
 import Image from "next/image";
-import Painter from "../../../public/Painter.png";
-import Science4 from "../../../public/Science4.png";
-import BusinessPlan from "../../../public/BusinessPlan.png";
-import aws from "../../../public/aws.png";
-import goggle from "../../../public/goggle.png";
-import sap from "../../../public/sap.png";
-import relic from "../../../public/relic.png";
-import bgPic from "../../../public/bgPic.png";
+import software from "../../../public/software.png";
+import marketing from "../../../public/marketing.png";
+import hiring from "../../../public/hiring.png";
+
 import { BsArrowRightShort } from "react-icons/bs";
-import woman from "../../../public/woman.png";
-import light from "../../../public/light.png";
-import goMarketPic from "../../../public/goMarketPic.png";
-import jandCollege from "../../../public/jandCollege.png";
-import Link from "next/link";
+
 import { useRouter } from "next/router";
 import Img1 from "../../../public/Img1.png";
 import Img2 from "../../../public/Img2.png";
@@ -22,6 +14,7 @@ import Img5 from "../../../public/Img5.png";
 import Img6 from "../../../public/Img6.png";
 import Img7 from "../../../public/Img7.png";
 import Img8 from "../../../public/Img8.png";
+import Link from "next/link";
 
 const ImgArr = [
   {
@@ -91,13 +84,14 @@ function Portofolio() {
         </div>
 
         <div className="lg:mt-[-20rem] lg:grid grid-cols-3 flex flex-col lg:flex-row gap-5 px-4  lg:px-20 xl:px-48 z-100 relative">
-          <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
-            <Image src={Painter} alt="Painter" className="" priority={true} />
+          <div className="bg-[#FFFFFF] py-8  px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={software} alt="software" className="" priority={true} />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               DevShop
             </p>
             <p className="text-[#869AB8] text-[15px] font-DMSans font-normal">
-              Technical building services that supersede your business needs.
+              Technical building services that supersede your business needs and
+              expectations.{" "}
             </p>
 
             <div className="flex py-4">
@@ -112,19 +106,13 @@ function Portofolio() {
               </Link>
             </div>
           </div>
-          <div className="bg-[#FFFFFF] py-1 md:pb-14 pb-8 px-6 object-contain rounded-lg  shadow-lg">
-            <Image
-              src={Science4}
-              alt="Painter"
-              className="md:w-[17rem] md:h-[17rem] w-[9.5rem] h-[9.5rem]"
-              priority={true}
-            />
+          <div className="bg-[#FFFFFF] py-8  px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={marketing} alt="software" priority={true} />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               Technical Advisory
             </p>
             <p className="text-[#869AB8] text-[15px] font-DMSans font-normal">
-              Harness the power of consulting world-class senior managers in
-              scaling your business.
+            Harness the power of consulting elite senior managers in scaling your business needs.
             </p>
 
             <div className="flex  py-4">
@@ -139,19 +127,13 @@ function Portofolio() {
               </Link>
             </div>
           </div>
-          <div className="bg-[#FFFFFF] py-1 pb-8  md:pb-14 px-6 object-contain rounded-lg  shadow-lg">
-            <Image
-              src={BusinessPlan}
-              alt="Painter"
-              className=""
-              priority={true}
-            />
+          <div className="bg-[#FFFFFF] py-8 px-6 object-contain rounded-lg  shadow-lg">
+            <Image src={hiring} alt="software" className="" priority={true} />
             <p className="text-[#162D1B] text-lg font-DMSans font-medium py-2">
               HireUp
             </p>
             <p className="text-[#869AB8] text-[15px] font-DMSans font-normal">
-              Recruit efficiently, manage adeptly, and consistently nurture
-              engineering teams of varying proficiency to propel your projects.
+            Recruit efficiently, manage, and nurture engineering teams to propel your projects.
             </p>
 
             <div className="flex py-4">
@@ -324,7 +306,7 @@ function Portofolio() {
             <Image
               src={goMarketPic}
               alt="background picture"
-              className="w-full h-full rounded-t-lg object-cover"
+              className="w-full h-full rounded-t-lg object-cover8
               priority={true}
 
             />
