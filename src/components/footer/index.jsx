@@ -13,7 +13,7 @@ import {
 
 function Footer() {
   const openPdfInNewTab = () => {
-    const pdfPath = "/PrivacyPolicyforVarscon.pdf";
+    const pdfPath = "/privacyPolicy.pdf";
     window.open(pdfPath, "_blank");
   };
 
