@@ -12,9 +12,12 @@ import {
 } from "react-icons/ai";
 
 function Footer() {
-  const openPdf = () => {
-    window.open("public/_Privacy Policy for Varscon.pdf");
+  const openPdfInNewTab = () => {
+    const pdfPath = "/PrivacyPolicyforVarscon.pdf";
+    window.open(pdfPath, "_blank");
   };
+
+
   return (
     <main className="z-[20] mt-0 mb-10 bg-[#FFFFFF] pt-10  lg:px-6 xl:px-36 px-4 mx-0 w-full self-end  border-t lg:border-t-0">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 ">
@@ -62,12 +65,12 @@ function Footer() {
           Contact
         </Link>
 
-        <p
-          onClick={openPdf}
+        <button
+          onClick={openPdfInNewTab}
           className="lg:text-[0.9375rem] text-base font-sans text-[#1E2833]"
         >
           Privacy Policy
-        </p>
+        </button>
 
         {/* <p className="lg:text-[0.9375rem] gap-1 flex items-center text-base font-sans text-[#1E2833] opacity-50">
           Copyright{" "}
